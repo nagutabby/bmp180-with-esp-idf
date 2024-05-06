@@ -79,7 +79,7 @@ int app_main() {
         bmp180_read_temperature(&temperature);
 
         ESP_LOGI(TAG, "Pressure: %"PRIu32" Pa, Temperature: %.1f °C", pressure, temperature);
-        vTaskDelay(1000 / portTICK_PERIOD_MS);
+        vTaskDelay(500 / portTICK_PERIOD_MS);
     }
 
     return 0;
